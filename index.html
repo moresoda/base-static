@@ -39,10 +39,10 @@
 -->
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
+<!-- 	<link rel="shortcut icon" href="favicon.ico"> -->
 	
 	<!-- 129x129 png | DO NOT round corners/put a gloss finish on, device does that automatically -->
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- 	<link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 	
 	
 	<!-- CSS -->
@@ -54,24 +54,23 @@
 	<![endif]-->
 	
 	<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.3-min.js"></script>
-
-		<script type="text/javascript" src="assets/js/selectivizr.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/nwmatcher.js"></script>
+		<script src="assets/js/selectivizr.js"></script>
 	<![endif]-->
 
 </head>
 
-<body>
+<body class="home">
 
 	<div id="wrapper">
-	
-		<header>
-	
+
+		<header class="cf">
+
 			<a id="logo" href="index.html"><img src="assets/images/logo.png" alt="" /></a>
 			
-			<nav>
-				<ul>
+			<nav class="cf">
+				<ul class="cf">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">XXX</a></li>
 				</ul>
@@ -90,36 +89,16 @@
 	
 		</div> <!-- content -->
 		
-		<footer>
+		<footer class="cf">
 			
 		</footer> <!-- footer -->
 	
 	</div> <!-- wrapper -->
 
 	<!-- JavaScript -->
-	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write("<script src='assets/js/jquery-1.7.0.min.js'>\x3C/script>")</script>
+	<script src="assets/js/jquery-1.7.2.min.js"></script>
+	<script src="assets/js/global.js"></script>
 
-	<!-- Aditional JavaScript -->
-	<script src="assets/js/global.js"></script> 
-
-	<!--
-	Google Font API WebFont Loader
-	Makes browsers hide the @font-face text until the font file has been loaded, prevents flicker in Firefox 
-	--> 
-<!-- 
-	Uncomment if using custom fonts
-	<script src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script> 
-	<script type="text/javascript"> 
-		WebFont.load({
-		  custom: {
-		    families: ['FONT-NAME'], // Font name as used in the stylesheet
-		    urls: ['assets/css/font-face.css']
-		  }
-		});
-	</script> 
--->
 	<!-- Analytics -->
 	<script>
 		var _gaq=[['_setAccount','UA-717581-X'],['_trackPageview'],['_trackPageLoadTime']];
